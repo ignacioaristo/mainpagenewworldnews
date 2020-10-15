@@ -1,9 +1,15 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 25px;
+}
+
 .logo {
     text-align: center;
     font-size: 45px;
+    line-height: 70px;
 }
 
-.main-news {
+.main-news-container {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -11,22 +17,34 @@
     margin: 5px;
 }
 
-.news-one, .news-two {
+.main-news{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    border-bottom: 1px solid grey;
     margin: 15px;
     text-align: center;
 }
 
+.main-news a{
+    border-bottom: 1px solid grey;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
 
-.news-one img, .news-two img {
+.others-news-container a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+
+
+.main-news img {
     width: 100%;
  
 }
 
-.others-news{
+.others-news-container{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -34,12 +52,31 @@
     
 }
 
-.other-news-one, .other-news-two {
+.other-news{
     text-align: center;
-    margin: 5px;
+    margin: 15px;
     
 }
 
 h2 {
     font-size: 30px;
 }
+
+
+@media screen and (min-width: 1025px) {
+    .main-container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+    }
+
+    .others-news-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        
+    }
+
+    
+  }
