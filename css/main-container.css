@@ -1,6 +1,6 @@
 .logo {
     text-align: center;
-    font-size: 35px;
+    font-size: 45px;
 }
 
 .main-news {
@@ -38,4 +38,8 @@
     text-align: center;
     margin: 5px;
     
+}
+
+h2 {
+    font-size: 30px;
 }
