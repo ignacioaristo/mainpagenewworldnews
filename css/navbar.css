@@ -3,8 +3,45 @@
     height: 50px;
 }
 
-@media screen and (min-width: 1025px) {
-    
+.navbar-complete {
+  display: none;
+}
 
-    
+@media screen and (min-width: 480px) {
+  .navbar-complete {
+      display: none;
   }
+
+
+
+
+@media screen and (min-width: 1024px) {
+  .hamb-menu {
+      display: none;
+  }
+
+  .navbar-complete {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      margin: 0px;
+      padding: 5px;
+      background: #0870B4;
+
+  }
+    
+  .navbar-complete li {
+    padding: 10px;
+    border-radius: 20%;
+    font-size: 25px;
+    text-decoration: none;
+    list-style: none;
+  }
+  .navbar-complete li:hover {
+    padding: 10px;
+    border-radius: 20%;
+    color: #FFF;
+
+  }
+
+ }
