@@ -1,6 +1,15 @@
+.navbar {
+  margin: 0px;
+  padding: 0px;
+  background: #0870B4;
+}
+
 .hamb-menu {
     width: 50px;
     height: 50px;
+    border: 2px solid black;
+    margin: 0px;
+    padding: 0px;
 }
 
 .navbar-complete {
@@ -10,10 +19,8 @@
 @media screen and (min-width: 480px) {
   .navbar-complete {
       display: none;
+
   }
-
-
-
 
 @media screen and (min-width: 1024px) {
   .hamb-menu {
@@ -26,22 +33,20 @@
       justify-content: space-around;
       margin: 0px;
       padding: 5px;
-      background: #0870B4;
-
+      list-style: none;
+      
   }
-    
-  .navbar-complete li {
+      
+  .navbar-complete li a{
     padding: 10px;
-    border-radius: 20%;
     font-size: 25px;
     text-decoration: none;
-    list-style: none;
+    font-weight: bold;
+    color: #051825;
   }
-  .navbar-complete li:hover {
+  .navbar-complete li a:hover {
     padding: 10px;
-    border-radius: 20%;
     color: #FFF;
-
   }
 
  }

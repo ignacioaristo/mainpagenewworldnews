@@ -1,24 +1,29 @@
-.logo {
-    margin: 0px;
-    padding: 5px;
-    text-align: center;
-    font-size: 45px;
-    line-height: 70px;
-    background: #2F6386;
-}
-
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     line-height: 25px;
 }
+.logo {
+    margin: 0px;
+    padding: 5px;
+    text-align: center;
+    font-size: 40px;
+    line-height: 70px;
+    background: #2F6386;
+}
 
+.main-container {
+    padding: 1px;
+    margin: 0px;
+    background: #54B4F7;
+}
 
 .main-news-container {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     align-content: space-around;
-    margin: 5px;
+    padding: 0px;
+    margin: 0px;
 }
 
 .main-news{
@@ -64,18 +69,11 @@ body {
 }
 
 h2 {
+    text-decoration: underline;
     font-size: 30px;
 }
 
 @media screen and (min-width: 480px) {   
-    .logo {
-        margin: 0px;
-        padding: 5px;
-        text-align: center;
-        font-size: 45px;
-        line-height: 70px;
-        background: #2F6386;
-    }
     .others-news-container{
         display: flex;
         flex-direction: row;
@@ -86,16 +84,7 @@ h2 {
     
 }
 
-
 @media screen and (min-width: 1024px) {
-    .logo {
-        margin: 0px;
-        padding: 5px;
-        text-align: center;
-        font-size: 45px;
-        line-height: 70px;
-        background: #2F6386;
-    }
      .main-container {
       display: flex;
       flex-direction: row;
