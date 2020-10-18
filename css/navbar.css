@@ -17,12 +17,6 @@
   display: none;
 }
 
-@media screen and (min-width: 480px) {
-  .navbar-complete {
-      display: none;
-
-  }
-
 @media screen and (min-width: 1024px) {
   .hamb-menu {
       display: none;
