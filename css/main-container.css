@@ -30,7 +30,6 @@ body {
     flex-wrap: nowrap;
     align-content: space-around;
     padding: 0px;
-    margin: 0px;
 }
 
 .main-news{
@@ -45,7 +44,7 @@ body {
     border-bottom: 1px solid grey;
     text-decoration: none;
     color: black;
-    padding: 10px;
+    padding: 0px;
 }
 
 .main-news img {
@@ -58,7 +57,7 @@ body {
     flex-wrap: nowrap;
     justify-content: space-between;
     text-align: center;
-
+    padding: 0px;
 }
 
 .others-news-container a {
@@ -84,6 +83,10 @@ h2 {
     line-height: 40px;
 }
 
+h3 {
+    margin-top: -30px;
+}
+
 @media screen and (min-width: 1024px) {
      .main-container {
       display: flex;
@@ -106,6 +109,5 @@ h2 {
     .other-news img {
         width: 90%;
     }
-    
     
   }
