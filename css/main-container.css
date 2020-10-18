@@ -2,7 +2,7 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     line-height: 25px;
 }
-.logo {
+#logo {
     margin: 0px;
     padding: 5px;
     text-align: center;
