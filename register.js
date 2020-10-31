@@ -5,24 +5,25 @@ window.onload = function(){
     var name = document.getElementById('name');
     name.onblur = function(){
         var space = name.value.indexOf (" ");
-        if (space <= 0 ){
+        if (name.value.length <= 6){
+            document.getElementById('p-name-length').style.display = "block";
+            document.getElementById('name').style.border = "3px solid red";
+        }else if(space <= 0){
             document.getElementById('p-name').style.display = "block";
             document.getElementById('name').style.border = "3px solid red";
-        }
+        } 
     }
 
     name.onfocus = function(){
         document.getElementById('p-name').style.display = "none";
+        document.getElementById('p-name-length').style.display = "none";
         document.getElementById('name').style.border = "";
 
     }
 
     // Email validation UNDONE
 
-    var email = document.getElementById('email');
-    email.onblur = function(){
-        
-    }
+    
     
 
     // Password validation
@@ -65,6 +66,7 @@ window.onload = function(){
             document.getElementById('age').style.border = "3px solid red";
         }   else if (age.value % 1 != 0){
             document.getElementById('p-age').style.display = "block";
+            document.getElementById('age').style.border = "3px solid red";
         }
         
     }
@@ -102,11 +104,13 @@ window.onload = function(){
     city.onblur = function (){
         if (city.value.length <3 ){
             document.getElementById('p-city').style.display= "block";
+            document.getElementById('city').style.border = "3px solid red";
         }
     }
 
     city.onfocus = function (){
         document.getElementById('p-city').style.display= "none";
+        document.getElementById('city').style.border = "";
     }
 
     // Postal code validation
@@ -115,13 +119,31 @@ window.onload = function(){
     postalCode.onblur = function(){
         if (postalCode.value.length <3){
             document.getElementById('p-postal-code').style.display= "block";
+            document.getElementById('postal-code').style.border = "3px solid red";
         }
     }
 
     postalCode.onfocus = function(){
         document.getElementById('p-postal-code').style.display="none";
+        document.getElementById('postal-code').style.border = "";
     }
     
+    // DNI validation
+
+    var dni = document.getElementById('dni');
+    dni.onblur = function(){
+        if (dni.value.length == 7 || dni.value.length ==8){
+            return true;
+        }   else {
+            document.getElementById('p-dni').style.display= "block";
+            document.getElementById('dni').style.border = "3px solid red";
+        }
+    }
+
+    dni.onfocus = function(){
+        document.getElementById('p-dni').style.display="none";
+        document.getElementById('dni').style.border = "";
+    }
 
 
 

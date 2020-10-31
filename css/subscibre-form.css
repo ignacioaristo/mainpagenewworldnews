@@ -60,7 +60,7 @@ display: none;
 
 /* Paragraph error */
 
-#p-name {
+#p-name, #p-name-length {
     display: none;
     font-size: 12px;
     font-weight: 800;
@@ -84,7 +84,7 @@ display: none;
     font-weight: 800;
 }
 
-#p-tel-number, #p-tel-number-length, #p-city, #p-postal-code{
+#p-tel-number, #p-tel-number-length, #p-city, #p-postal-code, #p-dni{
     display: none;
     font-size: 12px;
     font-weight: 800

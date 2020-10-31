@@ -31,8 +31,12 @@
                         <label for='name'> Nombre y Apellido</label>
                         <input type ="text" id='name'>
                         <p id="p-name">
-                        Please add an space between your name and last name
+                        Please add an space between your name and last name.
                         </p>
+                        <p id="p-name-length">
+                            Your name must have more than 6 letters.
+                            </p>
+
                     </div>
                     <div class="container-field">
                         <label for='email'> Email </label>
@@ -89,7 +93,10 @@
                     </div>
                     <div class="container-field">
                         <label for='dni'> DNI </label>
-                        <input  type='text' id='dni'>
+                        <input  type='number' id='dni'>
+                        <p id="p-dni">
+                            Your DNI has to have 7 or 8 numbers
+                        </p>
                     </div>
                 </div>
             </div>
