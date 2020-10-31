@@ -1,0 +1,74 @@
+/* Navbar */
+.navbar {
+    margin: 0px;
+    padding: 0px;
+    background: #0870B4;
+}
+  
+.hamb-menu {
+display: none;
+}
+
+.navbar-complete {
+display: none;
+}
+
+.navbar-complete {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0px;
+    padding: 5px;
+    list-style: none;  
+}
+    
+.navbar-complete li a{
+    padding: 10px;
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #051825;
+}
+
+.navbar-complete li a:hover {
+    color: #FFF;
+}
+
+/* Form */
+
+#register-form {
+    display:flex;
+    flex-direction: column;
+}
+
+.register-item {
+    width: 40%;
+}
+
+.container-field {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: 10px 5px;
+    width: 50%;
+}
+
+/* Paragraph error */
+
+#p-name {
+    display: none;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+#p-email {
+    display: none;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+#p-password {
+    display: none;
+    font-size: 12px;
+    font-weight: 800;
+}

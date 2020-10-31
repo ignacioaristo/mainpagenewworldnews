@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/normalize.css" rel="stylesheet">
+        <link href="css/main-container.css" rel="stylesheet">
+        <link href="css/footer.css" rel="stylesheet">
+        <link href="css/subscibre-form.css" rel="stylesheet">
+        <script src="register.js"></script>
+        <title>Register Form</title>
+    </head>
+    <body>
+        <header id="logo">
+            <h1>New World News</h1>
+            <p class="date"> 18 de Octubre, 2020.</p>
+        </header>
+        <nav class="navbar">
+            <img src="images/menu.png" class="hamb-menu">
+            <ul class="navbar-complete">
+                <li><a href="index.html">Back to main page</a></li>
+            </ul>
+        </nav>
+
+        <!-- Register form -->
+
+        <form id='register-form'>
+            <div class="container-field">
+                <label for='name'> Nombre y Apellido</label>
+                <input type ="text" id='name'>
+                <p id="p-name">
+                Please add an space between your name and last name
+                </p>
+            </div>
+            <div class="container-field">
+                <label for='email'> Email </label>
+                <input type='email' id='email'>
+                <p id="p-email">
+                    Please enter a valid email format
+                </p>
+            </div>
+            <div class="container-field">
+                <label for='password'> Password </label>
+                <input type='' id='password'>
+                <p id="p-password">
+                    Password must have at least 8 characters with numbers and letters.
+                </p>
+
+            </div>
+            <div class="container-field">
+                <label for='age'> Age </label>
+                <input type='text' id='age'>
+            </div>
+            <div class="container-field">
+                <label for='telNumber'> Telephone Number </label>
+                <input type='text' id='telNumber'>
+            </div>
+            <div class="container-field">
+                <label for='adress'> Adress </label>
+                <input type='text' id='adress'>
+            </div>
+            <div class="container-field">
+                <label for='city'> City </label>
+                <input type='text' id='city'>
+            </div>
+            <div class="container-field">
+                <label for='postalCode'> Postal Code </label>
+                <input type='text' id='postalCode'>
+            </div>
+            <div class="container-field">
+                <label for='dni'> DNI </label>
+                <input  type='text' id='dni'>
+            </div>
+        
+            <button id="button" type='submit' value='submit'>Register!</button>
+        </form>
+        
+    </body>
+    </html>
