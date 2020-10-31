@@ -72,3 +72,15 @@ display: none;
     font-size: 12px;
     font-weight: 800;
 }
+
+#p-age, #p-age-older{
+    display: none;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+#p-tel-number, #p-tel-number-length{
+    display: none;
+    font-size: 12px;
+    font-weight: 800
+}

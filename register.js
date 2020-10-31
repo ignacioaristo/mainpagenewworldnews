@@ -53,8 +53,25 @@ window.onload = function(){
 
     // Age validation
 
-    
+    var age = document.getElementById('age');
+    age.onblur = function(){
+        if (age.value < 18){
+            document.getElementById('p-age-older').style.display = "block";
+        }   else if (age.value % 1 != 0){
+            document.getElementById('p-age').style.display = "block";
+        }
+        
+    }
 
+    age.onfocus = function(){
+        document.getElementById('p-age-older').style.display ="none";
+        document.getElementById('p-age').style.display ="none";
+    }
+
+    // Telephone Number validation
+
+    var telNumber = document.getElementById('tel-number');
+    
 
 
 
