@@ -15,7 +15,7 @@ window.onload = function(){
 
     }
 
-    // Email validation undone
+    // Email validation UNDONE
 
     var email = document.getElementById('email');
     email.onblur = function(){
@@ -68,11 +68,23 @@ window.onload = function(){
         document.getElementById('p-age').style.display ="none";
     }
 
-    // Telephone Number validation
+    // Telephone Number validation 
 
     var telNumber = document.getElementById('tel-number');
+    telNumberValidation = /^\d{7,14}$/
+    telNumber.onblur = function(){
+        if(!telNumberValidation.test(telNumber.value)){
+            document.getElementById('p-tel-number').style.display = "block";
+        }   
+    }
+
+    telNumber.onfocus = function(){
+        document.getElementById('p-tel-number').style.display = "none";
+    }
+
     
 
+    
 
 
 
