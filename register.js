@@ -96,7 +96,31 @@ window.onload = function(){
     // Adress validation 
 
 
+    // City validation
 
+    var city = document.getElementById('city');
+    city.onblur = function (){
+        if (city.value.length <3 ){
+            document.getElementById('p-city').style.display= "block";
+        }
+    }
+
+    city.onfocus = function (){
+        document.getElementById('p-city').style.display= "none";
+    }
+
+    // Postal code validation
+
+    var postalCode = document.getElementById('postal-code');
+    postalCode.onblur = function(){
+        if (postalCode.value.length <3){
+            document.getElementById('p-postal-code').style.display= "block";
+        }
+    }
+
+    postalCode.onfocus = function(){
+        document.getElementById('p-postal-code').style.display="none";
+    }
     
 
 

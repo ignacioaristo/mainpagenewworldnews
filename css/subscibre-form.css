@@ -84,11 +84,13 @@ display: none;
     font-weight: 800;
 }
 
-#p-tel-number, #p-tel-number-length{
+#p-tel-number, #p-tel-number-length, #p-city, #p-postal-code{
     display: none;
     font-size: 12px;
     font-weight: 800
 }
+
+
 
 
 
