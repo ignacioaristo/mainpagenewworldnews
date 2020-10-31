@@ -53,6 +53,11 @@ display: none;
     width: 50%;
 }
 
+#button{
+    margin: 10px 5px;
+    width: 50%;
+}
+
 /* Paragraph error */
 
 #p-name {
@@ -83,4 +88,44 @@ display: none;
     display: none;
     font-size: 12px;
     font-weight: 800
+}
+
+
+
+
+@media screen and (min-width: 1024px){
+    
+     #register-form{
+         flex-wrap: nowrap;
+         justify-content: space-between;
+         margin: auto;
+         width: 90%;
+       
+     }
+    .double-column{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .container-field{
+        width: 400px;
+        margin: 15px;
+    }
+
+    .box-column{
+        margin: 10px 50px;
+
+    }
+
+    .button-box{
+        text-align: center;
+    }
+
+    #button{
+        width: 25%;
+        
+    }
+
 }
