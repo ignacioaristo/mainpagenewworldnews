@@ -14,7 +14,7 @@ window.onload = function(){
         } else {
             document.getElementById('name').style.border = "3px solid green";
             nameValidation = true;
-            validations.push(name.value);
+            validations[0]=(name.value);
         }
     }
 
@@ -35,7 +35,7 @@ window.onload = function(){
         }   else{
             document.getElementById('email').style.border = "3px solid green";
             emailValidation = true;
-            validations.push(email.value);
+            validations[1]=email.value;
         }
     }
 
@@ -70,7 +70,7 @@ window.onload = function(){
         }   else {
             document.getElementById('password').style.border = "3px solid green";
             passwordValidation = true;
-            validations.push(password.value);
+            validations[2]=password.value;
         }
     }
 
@@ -93,7 +93,7 @@ window.onload = function(){
         }   else{
             document.getElementById('age').style.border = "3px solid green";
             ageValidation = true;
-            validations.push(age.value);
+            validations[3]= age.value;
         }   
     }
 
@@ -114,7 +114,7 @@ window.onload = function(){
         }   else{
             document.getElementById('tel-number').style.border = "3px solid green";
             telValidation = true;
-            validations.push(telNumber.value);
+            validations[4]= telNumber.value;
         }
     }
 
@@ -152,7 +152,7 @@ window.onload = function(){
         }   else {
             document.getElementById('adress').style.border = "3px solid green";
             adressValidation = true;
-            validations.push(adress.value);
+            validations[5]= adress.value;
         }
 
     }
@@ -172,7 +172,7 @@ window.onload = function(){
         }   else {
             document.getElementById('city').style.border = "3px solid green";
             cityValidation = true;
-            validations.push(city.value);
+            validations[6]= city.value;
         }
     }
 
@@ -191,7 +191,7 @@ window.onload = function(){
         }   else {
             document.getElementById('postal-code').style.border = "3px solid green";
             codeValidation = true;
-            validations.push(postalCode.value);
+            validations[7]=postalCode.value;
         }
     }
 
@@ -207,7 +207,7 @@ window.onload = function(){
         if (dni.value.length == 7 || dni.value.length ==8){
             document.getElementById('dni').style.border = "3px solid green";
             dnieValidation = true;
-            validations.push(dni.value);
+            validations[8]= dni.value;
         }   else {
             document.getElementById('p-dni').style.display= "block";
             document.getElementById('dni').style.border = "3px solid red";
@@ -227,7 +227,7 @@ window.onload = function(){
 
     button.onclick = function(){
         if (nameValidation && emailValidation && passwordValidation && ageValidation && telValidation && adressValidation && cityValidation && codeValidation && dnieValidation){
-            alert(validations.join("-"));
+            alert(validations.join("\n"));
         }
     }
 

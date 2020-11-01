@@ -39,6 +39,7 @@ display: none;
 #register-form {
     display:flex;
     flex-direction: column;
+    background: #54B4F7;
 }
 
 .register-item {
@@ -97,11 +98,16 @@ display: none;
 
 @media screen and (min-width: 1024px){
     
+    body{
+        background: #54B4F7;
+    }
+
      #register-form{
-         flex-wrap: nowrap;
-         justify-content: space-between;
-         margin: auto;
-         width: 90%;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        margin: auto;
+        width: 90%;
+        background: #54B4F7;
        
      }
     .double-column{
