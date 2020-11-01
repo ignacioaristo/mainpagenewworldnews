@@ -1,5 +1,5 @@
 window.onload = function(){
-    
+    var validations = [];
     // Name validation
 
     var name = document.getElementById('name');
@@ -13,6 +13,8 @@ window.onload = function(){
             document.getElementById('name').style.border = "3px solid red";
         } else {
             document.getElementById('name').style.border = "3px solid green";
+            nameValidation = true;
+            validations.push(name.value);
         }
     }
 
@@ -20,7 +22,6 @@ window.onload = function(){
         document.getElementById('p-name').style.display = "none";
         document.getElementById('p-name-length').style.display = "none";
         document.getElementById('name').style.border = "";
-
     }
 
     // Email validation
@@ -33,6 +34,8 @@ window.onload = function(){
             document.getElementById('email').style.border = "3px solid red";
         }   else{
             document.getElementById('email').style.border = "3px solid green";
+            emailValidation = true;
+            validations.push(email.value);
         }
     }
 
@@ -66,6 +69,8 @@ window.onload = function(){
             document.getElementById('password').style.border = "3px solid red";
         }   else {
             document.getElementById('password').style.border = "3px solid green";
+            passwordValidation = true;
+            validations.push(password.value);
         }
     }
 
@@ -87,6 +92,8 @@ window.onload = function(){
             document.getElementById('age').style.border = "3px solid red";
         }   else{
             document.getElementById('age').style.border = "3px solid green";
+            ageValidation = true;
+            validations.push(age.value);
         }   
     }
 
@@ -106,6 +113,8 @@ window.onload = function(){
             document.getElementById('tel-number').style.border = "3px solid red";   
         }   else{
             document.getElementById('tel-number').style.border = "3px solid green";
+            telValidation = true;
+            validations.push(telNumber.value);
         }
     }
 
@@ -142,8 +151,8 @@ window.onload = function(){
             document.getElementById('adress').style.border = "3px solid red";
         }   else {
             document.getElementById('adress').style.border = "3px solid green";
-            console.log(numberSum);
-            console.log(letterSum);
+            adressValidation = true;
+            validations.push(adress.value);
         }
 
     }
@@ -162,6 +171,8 @@ window.onload = function(){
             document.getElementById('city').style.border = "3px solid red";
         }   else {
             document.getElementById('city').style.border = "3px solid green";
+            cityValidation = true;
+            validations.push(city.value);
         }
     }
 
@@ -179,6 +190,8 @@ window.onload = function(){
             document.getElementById('postal-code').style.border = "3px solid red";
         }   else {
             document.getElementById('postal-code').style.border = "3px solid green";
+            codeValidation = true;
+            validations.push(postalCode.value);
         }
     }
 
@@ -193,6 +206,8 @@ window.onload = function(){
     dni.onblur = function(){
         if (dni.value.length == 7 || dni.value.length ==8){
             document.getElementById('dni').style.border = "3px solid green";
+            dnieValidation = true;
+            validations.push(dni.value);
         }   else {
             document.getElementById('p-dni').style.display= "block";
             document.getElementById('dni').style.border = "3px solid red";
@@ -207,8 +222,16 @@ window.onload = function(){
 
     // Button validation
 
+   
+    var button = document.getElementById('button');
 
+    button.onclick = function(){
+        if (nameValidation && emailValidation && passwordValidation && ageValidation && telValidation && adressValidation && cityValidation && codeValidation && dnieValidation){
+            alert(validations.join("-"));
+        }
+    }
 
+    
 
     
 }
