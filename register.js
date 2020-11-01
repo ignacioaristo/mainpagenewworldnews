@@ -42,7 +42,6 @@ window.onload = function(){
     email.onfocus = function(){
         document.getElementById('p-email').style.display="none";
         document.getElementById('email').style.border = "";
-
     }
 
     // Password validation
@@ -77,7 +76,6 @@ window.onload = function(){
     password.onfocus = function(){
         document.getElementById('p-password').style.display = "none";
         document.getElementById('age').style.border = "";
-
     }
 
     // Age validation
@@ -154,7 +152,6 @@ window.onload = function(){
             adressValidation = true;
             validations[5]= adress.value;
         }
-
     }
 
     adress.onfocus = function(){
@@ -229,9 +226,7 @@ window.onload = function(){
         if (nameValidation && emailValidation && passwordValidation && ageValidation && telValidation && adressValidation && cityValidation && codeValidation && dnieValidation){
             alert(validations.join("\n"));
         }
-    }
-
-    
+    }    
 
     
 }
