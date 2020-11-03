@@ -1,5 +1,5 @@
 window.onload = function(){
-    var validations = [];
+    
     // Name validation
 
     var name = document.getElementById('name');
@@ -22,7 +22,6 @@ window.onload = function(){
 
     name.onfocus = function(){
         document.getElementById('p-name').style.display = "none";
-        document.getElementById('p-name-length').style.display = "none";
         document.getElementById('name').style.border = "";
     }
 
@@ -87,7 +86,32 @@ window.onload = function(){
 
     password.onfocus = function(){
         document.getElementById('p-password').style.display = "none";
-        document.getElementById('age').style.border = "";
+        document.getElementById('password').style.border = "";
+    }
+
+    // Repeat password validation
+
+    var repeatPassword = document.getElementById('repeat-password');
+    function repeatPasswordValidation(){
+        if (repeatPassword.value !== password.value){
+            return true;
+        }   else{
+            return false;
+        }
+    }
+
+    repeatPassword.onblur = function(){
+        if(repeatPasswordValidation(repeatPassword.value)){
+            document.getElementById('p-repeat-password').style.display='block';
+            document.getElementById('repeat-password').style.border = "3px solid red";
+        }   else{
+            document.getElementById('repeat-password').style.border = "3px solid green"; 
+        }
+    }
+
+    repeatPassword.onfocus = function(){
+        document.getElementById('p-repeat-password').style.display = "none";
+        document.getElementById('repeat-password').style.border = "";
     }
 
     // Age validation
@@ -267,35 +291,35 @@ window.onload = function(){
 
     button.onclick = function(){
         var errors ="";
-        if(!validateName){
+        if(validateName(name.value)){
             errors += "Full name, "
         }
-        if(!emailValidation){
+        if(emailValidation(email.value)){
             errors += "Email, "
         }
-        if(!passwordValidation){
+        if(passwordValidation(password.value)){
             errors += "Password, "
         }
-        if(!ageValidation){
+        if(ageValidation(age.value)){
             errors += "Age, "
         }
-        if(!telValidation){
+        if(telValidation(telNumber.value)){
             errors += "Telephone Number, "
         }
-        if(!adressValidation){
+        if(adressValidation(adress.value)){
             errors += "Adress, "
         }
-        if(!cityValidation){
+        if(cityValidation(city.value)){
             errors += "City, "
         }
-        if(!postalCodeValidation){
+        if(postalCodeValidation(postalCode.value)){
             errors += "Postal Code, "
         }
-        if(!dniValidation){
-            errors += "DNI, "
+        if(dniValidation(dni.value)){
+            errors += "DNI."
         }
         
-        if (validateName && emailValidation && passwordValidation && ageValidation && telValidation && adressValidation && cityValidation && postalCodeValidation && dniValidation){
+        if (!validateName(name.value) && !emailValidation(email.value) && !passwordValidation(password.value) && !ageValidation(age.value) && !telValidation(telNumber.value) && !adressValidation(adress.value) && !cityValidation(city.value) && !postalCodeValidation(postalCode.value) && !dniValidation(dni.value)){
             alert(
             "Full name: " + name.value + "\n" +
             "Email: " + email.value + "\n" +
@@ -308,10 +332,8 @@ window.onload = function(){
             "DNI: " + dni.value);
         }
         else {
-            console.log("Please check the following fields" + errors);
+            alert("Please check the following fields: " + errors);
         }     
     }   
-
-
     
 }
