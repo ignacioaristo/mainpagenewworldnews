@@ -335,5 +335,14 @@ window.onload = function(){
             alert("Please check the following fields: " + errors);
         }     
     }   
+
+    // BONUS
+
+    var nameTittle = document.querySelector('input[type="text"]');
+    nameTittle.addEventListener('keyup', runEvent);
+
+    function runEvent(e){
+        document.getElementById('name-form').innerHTML= e.target.value ? "<h2>Hi "+name.value+"</h2>" : "";
+    }
     
 }

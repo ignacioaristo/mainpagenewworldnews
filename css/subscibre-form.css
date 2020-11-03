@@ -36,6 +36,14 @@ display: none;
 
 /* Form */
 
+#name-form{
+    text-align: center;
+}
+
+#name-form h2{
+    text-decoration: none;
+}
+
 #register-form {
     display:flex;
     flex-direction: column;
@@ -61,39 +69,11 @@ display: none;
 
 /* Paragraph error */
 
-#p-name, #p-name-length {
-    display: none;
-    font-size: 12px;
-    font-weight: 800;
-}
-
-#p-email {
-    display: none;
-    font-size: 12px;
-    font-weight: 800;
-}
-
-#p-password {
-    display: none;
-    font-size: 12px;
-    font-weight: 800;
-}
-
-#p-age, #p-age-older{
-    display: none;
-    font-size: 12px;
-    font-weight: 800;
-}
-
-#p-tel-number, #p-tel-number-length, #p-city, #p-postal-code, #p-dni, #p-adress, #p-repeat-password{
+#p-name, #p-name-length, #p-tel-number, #p-tel-number-length, #p-city, #p-postal-code, #p-dni, #p-adress, #p-repeat-password, #p-age, #p-age-older, #p-password, #p-email{
     display: none;
     font-size: 12px;
     font-weight: 800
 }
-
-
-
-
 
 
 @media screen and (min-width: 1024px){
