@@ -1,3 +1,3 @@
 https://ignacioaristo.github.io/mainpagenewworldnews/
 
-Checkout the subcribe page!
+Checkout the subscribe page!
